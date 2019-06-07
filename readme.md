@@ -1,6 +1,6 @@
 # _Programming Language Picker_
 
-#### _{Brief description of application}, June 7th, 2019_
+#### _Webpage with a questionnaire that picks a programming language an individual should learn, June 7th, 2019_
 
 #### By _**Jessica Munoz**_
 
@@ -10,17 +10,15 @@ _{This is a detailed description of your application. Its purpose and usage.  Gi
 
 ## Setup/Installation Requirements
 
-* _This is a great place_
-* _to list setup instructions_
-* _in a simple_
-* _easy-to-understand_
-* _format_
+* _Clone this repository._
+* _Open index.html file in a browser to view._
+* _Alternatively, you can view the webpage by browsing to the following URL:_
 
 _{Leave nothing to chance! You want it to be easy for potential users, employers and collaborators to run your app. Do I need to run a server? How should I set up my databases? Is there other code this app depends on?}_
 
 ## Known Bugs
 
-_{Are there issues that have not yet been resolved that you want to let users know you know?  Outline any issues that would impact use of your application.  Share any workarounds that are in place. }_
+_No known issues at this time._
 
 ## Support and contact details
 
@@ -32,6 +30,6 @@ _{Tell me about the languages and tools you used to create this app. Assume that
 
 ### License
 
-*{Determine the license under which this application can be used.  See below for more details on licensing.}*
+*This webpage is licensed under the GPL license*
 
-Copyright (c) 2016 **_{List of contributors or company name}_**
+Copyright (c) 2019 **_Jessica Munoz_**

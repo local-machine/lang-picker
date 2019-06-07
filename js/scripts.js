@@ -34,14 +34,11 @@ $(document).ready(function() {
     } else {
       var num3 = 33
     }
-
-      var result = (num1*num2*num3)%3
+      return Math.floor(Math.random() * 4);
+      //var result = (num1*num2*num3)%3
 
       prompt("hi");
       $("#lang").append('<img src=img/lang' + result +'.jpg>');
-
-
-      // event.preventDefault();
 
   });
 });
