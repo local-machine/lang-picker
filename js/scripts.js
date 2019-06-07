@@ -45,11 +45,11 @@ $(document).ready(function() {
     } else {
       var num5 = 2
     }
-    prompt("hi");
+    //prompt("hi");
       //return Math.floor(Math.random() * 4);
-      var result = (num1*num2*num3*num4*num5)%5
+      var result = (num1+num2+num3+num4+num5)%5
 
-      prompt("hi");
+      //prompt("hi");
       $("#lang").append('<img src=img/lang' + result +'.jpg>');
 
   });
