@@ -1,0 +1,73 @@
+Skip to content
+
+Search or jump to…
+
+Pull requests
+Issues
+Marketplace
+Explore
+
+@local-machine
+0
+0 0 local-machine/celeb-quiz
+ Code  Issues 0  Pull requests 0  Projects 0  Wiki  Security  Insights  Settings
+celeb-quiz/index.html
+ Jessica Munoz and Lucas Blasdel final project
+fa3028f 17 hours ago
+56 lines (51 sloc)  1.75 KB
+
+<!DOCTYPE html>
+<html>
+  <head>
+    <title></title>
+    <link href="css/bootstrap.css" rel="stylesheet" type="text/css">
+    <link href="css/styles.css" rel="stylesheet" type="text/css">
+    <script src="js/jquery-3.4.1.js"></script>
+    <script src="js/scripts.js"></script>
+  </head>
+<body>
+    <div class="container">
+      <div class="jumbotron">
+        <h1>Fill in the blanks to find out which programming language is for you!</h1>
+      </div>
+      <div>
+        <form id="questionnaire">
+          <p>: </p>
+          <select class="form-control" id="orientation">
+            <option >male (only)</option>
+            <option >female (female)</option>
+            <option >both male and female</option>
+            <option >all genders</option>
+          </select>
+          <p>The preferred height range: </p>
+          <select class="form-control" id="height">
+            <option >5'2 or less (only)</option>
+            <option >5'2-5'6</option>
+            <option >5'6-5'10</option>
+            <option >5'10-6'2</option>
+            <option >6'2 and above</option>
+          </select>
+          <p>eye color: </p>
+          <select class="form-control" id="eyes">
+            <option >brown</option>
+            <option >blue</option>
+            <option >green</option>
+          </select>
+          <p>prefered personality type: </p>
+          <select class="form-control" id="personality">
+            <option >Outgoing</option>
+            <option >responsible</option>
+            <option >introvert</option>
+          </select>
+          <button type="submit" class="btn-default">see my dream celebrity</button>
+
+
+          <div id="celphoto">
+          <span class="celebphoto"></span>
+          </div>
+
+
+        </form>
+      </div>
+  </body>
+</html>
