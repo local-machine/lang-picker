@@ -1,74 +1,47 @@
 $(document).ready(function() {
   $("form#questionnaire").submit(function(event) {
-    var var1 = ($("#orientation").val());
-    var var2 = ($("#height").val());
-    var var3 = ($("#eyes").val());
-    var var4 = ($("#personality").val());
+    var build1 = ($("#build").val());
+    var platform1 = ($("#platform").val());
+    var interest1 = ($("#interest").val());
 
 
     event.preventDefault();
 
-    if (var1 === "both male and female"){
+    if (build1 === "Game"){
       var num1 = 2
-    } else if (var1 === "male"){
+    } else if (build1 === "Web"){
       var num1 = 3
-
-    } else if (var1 === "female"){
+    } else if (build1 === "Mobile"){
       var num1 = 5
-    } else {
+    } else if (build1 === "Desktop Software"){
       var num1 = 7
+    } else {
+      var num1 = 11
     }
 
-
-
-    if (var2 === "5'2 or less"){
-      var num2 = 11;
-
-    }
-    else if (var2 === "5'2-5'6"){
+    if (platform1 === "Windows"){
       var num2 = 13;
-    }
-    else if (var2 === "5'6-5'10"){
+    } else if (platform1 === "Mac"){
       var num2 = 17;
-    }
-    else if (var2 === "5'10-6'2"){
+    } else if (platform1 === "iOS"){
       var num2 = 19;
-    }
-    else {
+    } else {
       var num2 = 23;
     }
 
-
-    if (var3 === "brown"){
+    if (interest1 === "How to interact with things"){
       var num3 = 29
-
-    } else if (var3 === "blue"){
-      var num3 = 31
-
     } else {
-      var num3 = 37
+      var num3 = 31
     }
 
-    if (var4 === "Outgoing"){
-      var num4 = 41
+      var result = (num1*num2*num3)%3
 
-    } else if (var4 === "responsible"){
-      var num4 = 43
-
-    } else{
-      var num4 = 47
-    }
-
-      var result = (num1*num2*num3*num4)%11+1
-
-
+      prompt("hi");
       $("#celphoto").append('<img src=img/celeb' + result +'.jpg>');
 
 
       // event.preventDefault();
-
-
-
 
   });
 });
