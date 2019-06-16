@@ -37,6 +37,7 @@ $(document).ready(function() {
     } else {
       var quest3 = 4;
     }
+
     if (money === "I want to be comfortable."){
       var quest4 = 1
     } else if (money === "A lot."){
@@ -46,6 +47,7 @@ $(document).ready(function() {
     } else {
       var quest4 = 4
     }
+
     if (admire === "Paypal, front-end of websites"){
       var quest5 = 1
     } else if (admire === "YouTube, Instagram & Spotify"){
@@ -56,12 +58,35 @@ $(document).ready(function() {
       var quest5 = 4
     }
 
-    //prompt("hi");
-      //return Math.floor(Math.random() * 4);
-      var result = (num1+num2+num3+num4+num5)%5
+    function getImage(result) {
+      var imageMap = {
+        "js": "lang1.png",
+        "python": "lang2.png",
+        "c#": "lang3.png",
+        "java": "lang4.jpg",
+      }
 
-      //prompt("hi");
-      $("#lang").append('<img src=img/lang' + result +'.jpg>');
+      if (result <= 5){
+        return imageMap["js"];
+      } else if (result >= 6 && result <= 10){
+        return imageMap["python"];
+      } else if (result >= 11 && result <= 14){
+        return imageMap["c#"];
+      } else {
+        return imageMap["java"];
+      }
+    }
+    
+// arrow function = function getImageTag(image)
+    var getImageTag = (image) => {
+      return $("#lang-img").replaceWith("<img id='lang-img' src='img/" + image + "'/>")
+    }
 
+    var result = (quest1+quest2+quest3+quest4+quest5)
+    var image = getImage(result)
+    getImageTag(image)
+    // Alt way to produce image
+    // getImageTag(getImage(result))
+    // $("#lang-img").replaceWith("<img id='lang-img' src='img/" + image + "'/>")
   });
 });
