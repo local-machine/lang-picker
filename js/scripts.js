@@ -76,7 +76,7 @@ $(document).ready(function() {
         return imageMap["java"];
       }
     }
-    
+
 // arrow function = function getImageTag(image)
     var getImageTag = (image) => {
       return $("#lang-img").replaceWith("<img id='lang-img' src='img/" + image + "'/>")

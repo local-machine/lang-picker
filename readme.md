@@ -16,7 +16,7 @@ _This webpage is meant to act as a questionnaire to determine which programming 
 
 ## Known Bugs
 
-_The function used in scripts.js isn't complete therefore, the quiz doesn't render a proper response._
+_No known issues at this time._
 
 
 ### License

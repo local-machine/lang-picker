@@ -3,3 +3,17 @@ body {
   background-color: #d5e5ea;
   font-stretch: normal;
 }
+
+img {
+  border-radius: 15px;
+  float: left;
+  width: 300px;
+  margin: 30px;
+}
+
+.opener {
+  padding-bottom: 10px;
+  font-stretch: extra-expanded;
+  font-size: large;
+  float: left;
+}
